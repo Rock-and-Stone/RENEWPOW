@@ -165,7 +165,13 @@
     <ClInclude Include="keyAniManager.h" />
     <ClInclude Include="keyManager.h" />
     <ClInclude Include="loadingScene.h" />
+<<<<<<< HEAD
     <ClInclude Include="openingScene.h" />
+=======
+    <ClInclude Include="object.h" />
+    <ClInclude Include="objectManager.h" />
+    <ClInclude Include="objectScene.h" />
+>>>>>>> 2b6bc548143759c73d8cb706f3fe0ac47f98e398
     <ClInclude Include="pch.h" />
     <ClInclude Include="playerScene.h" />
     <ClInclude Include="playGround.h" />
@@ -201,7 +207,13 @@
     <ClCompile Include="keyAniManager.cpp" />
     <ClCompile Include="keyManager.cpp" />
     <ClCompile Include="loadingScene.cpp" />
+<<<<<<< HEAD
     <ClCompile Include="openingScene.cpp" />
+=======
+    <ClCompile Include="object.cpp" />
+    <ClCompile Include="objectManager.cpp" />
+    <ClCompile Include="objectScene.cpp" />
+>>>>>>> 2b6bc548143759c73d8cb706f3fe0ac47f98e398
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
