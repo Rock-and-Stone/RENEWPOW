@@ -6,6 +6,7 @@
 //이미지 회전할때 편하게 하려고
 #define PI8		float(PI / 8.0f)
 #define PI16	float(PI / 16.0f)
+#define PI20	float(PI / 20.0f)
 #define PI32	float(PI / 32.0f)
 #define PI64	float(PI / 64.0f)
 #define PI128	float(PI / 128.0f)

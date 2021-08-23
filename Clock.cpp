@@ -73,7 +73,6 @@ void Clock::ClockRender()
 	_seasonImg->render(getMemDC(), 1192, 84);
 	_needleMoveImg->frameRender(getMemDC(), _x, _y);
 
-	
 
 }
 
