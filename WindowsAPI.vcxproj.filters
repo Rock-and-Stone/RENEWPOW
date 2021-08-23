@@ -61,6 +61,9 @@
     <Filter Include="playGround\entity">
       <UniqueIdentifier>{7dd8f635-9d24-45fb-85d4-875859a2ffd6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="playGround\UserInterFace">
+      <UniqueIdentifier>{bab475e2-66c9-4fac-9e71-38d470a9250f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -162,6 +165,9 @@
     <ClInclude Include="gameData.h">
       <Filter>playGround</Filter>
     </ClInclude>
+    <ClInclude Include="Clock.h">
+      <Filter>playGround\UserInterFace</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WindowsAPI.cpp">
@@ -250,6 +256,9 @@
     </ClCompile>
     <ClCompile Include="gameData.cpp">
       <Filter>playGround</Filter>
+    </ClCompile>
+    <ClCompile Include="Clock.cpp">
+      <Filter>playGround\UserInterFace</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
