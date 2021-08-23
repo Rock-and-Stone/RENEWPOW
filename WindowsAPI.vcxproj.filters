@@ -168,6 +168,9 @@
     <ClInclude Include="Clock.h">
       <Filter>playGround\UserInterFace</Filter>
     </ClInclude>
+    <ClInclude Include="openingScene.h">
+      <Filter>playGround\Scene</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WindowsAPI.cpp">
@@ -259,6 +262,9 @@
     </ClCompile>
     <ClCompile Include="Clock.cpp">
       <Filter>playGround\UserInterFace</Filter>
+    </ClCompile>
+    <ClCompile Include="openingScene.cpp">
+      <Filter>playGround\Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
