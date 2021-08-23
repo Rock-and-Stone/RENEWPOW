@@ -46,7 +46,7 @@ void loadingScene::update()
 	if (_currentCount == LOADINGMAX)
 	{
 		//이동할 씬 으로 변경
-		SCENEMANAGER->changeScene("playerScene");
+		SCENEMANAGER->changeScene("object");
 	}
 }
 
@@ -64,7 +64,8 @@ DWORD CALLBACK threadFunction(LPVOID lpParameter)
 	while (loadingHelper->_currentCount != LOADINGMAX)
 	{
 		//소스 파일 추가
-
+		
+		IMAGEMANAGER->addFrameImage("playerTool", "playerTool.bmp", 96, 16, 6, 0, true, RGB(255, 0, 255)); // 플레이어 도구
 
 
 		loadingHelper->_currentCount++;
