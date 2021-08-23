@@ -61,6 +61,15 @@
     <Filter Include="playGround\entity">
       <UniqueIdentifier>{7dd8f635-9d24-45fb-85d4-875859a2ffd6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="playGround\object">
+      <UniqueIdentifier>{c62616c6-98b2-4fdf-b415-e6ed44ebc3fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\objectManager">
+      <UniqueIdentifier>{cf41ccd9-2877-4d15-9825-4769a35641ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\userInterface">
+      <UniqueIdentifier>{57af10ed-1cdd-41d0-b3be-0be62a044f1b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -162,6 +171,21 @@
     <ClInclude Include="gameData.h">
       <Filter>playGround</Filter>
     </ClInclude>
+    <ClInclude Include="object.h">
+      <Filter>playGround\object</Filter>
+    </ClInclude>
+    <ClInclude Include="objectManager.h">
+      <Filter>playGround\objectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="objectScene.h">
+      <Filter>playGround\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="openingScene.h">
+      <Filter>playGround\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Clock.h">
+      <Filter>playGround\userInterface</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WindowsAPI.cpp">
@@ -250,6 +274,21 @@
     </ClCompile>
     <ClCompile Include="gameData.cpp">
       <Filter>playGround</Filter>
+    </ClCompile>
+    <ClCompile Include="object.cpp">
+      <Filter>playGround\object</Filter>
+    </ClCompile>
+    <ClCompile Include="objectManager.cpp">
+      <Filter>playGround\objectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="openingScene.cpp">
+      <Filter>playGround\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="objectScene.cpp">
+      <Filter>playGround\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Clock.cpp">
+      <Filter>playGround\userInterface</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
