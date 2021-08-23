@@ -12,6 +12,7 @@ private:
 	unsigned long _FPSframeCount;	//프레임 카운트 
 	float _FPSTimeElapsed;			//한 프레임 당 경과량
 	float _worldTime;				//총 작동 시간
+	float _elapsedTime;				//월드 경과시간
 
 public:
 	timer();
@@ -22,5 +23,8 @@ public:
 	unsigned long getFrameRate(char* str = nullptr) const;
 	inline float getElapsedTime() const { return _timeElapsed; }
 	inline float getWorldTime() const { return _worldTime; }
+	inline float GetWorldElapsedTime() { return _elapsedTime; }
+	inline void SetWorldElapsedTime(float elapsedTime) { _elapsedTime = elapsedTime; }
 };
+
 

@@ -42,7 +42,7 @@ void timeManager::render(HDC hdc)
 	//글자 배경모드
 	SetBkMode(hdc, TRANSPARENT);
 
-	SetTextColor(hdc, RGB(255, 255, 255));
+	SetTextColor(hdc, RGB(0, 0, 0));
 
 #ifdef _DEBUG
 	if (_timer != nullptr)

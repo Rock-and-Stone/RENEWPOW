@@ -28,6 +28,7 @@ HRESULT timer::init()
 	_FPSframeCount = 0;
 	_FPSTimeElapsed = 0;
 	_worldTime = 0;
+	_elapsedTime = 0;
 
 	return S_OK;
 }
@@ -46,7 +47,7 @@ void timer::tick(float lockFPS)
 			QueryPerformanceCounter((LARGE_INTEGER*)&_curTime);
 
 			_timeElapsed = (_curTime - _lastTime) * _timeScale;
-			
+
 		}
 	}
 
@@ -54,6 +55,7 @@ void timer::tick(float lockFPS)
 	_FPSframeCount++;
 	_FPSTimeElapsed += _timeElapsed;
 	_worldTime += _timeElapsed;
+	_elapsedTime += _timeElapsed;
 
 	if (_FPSTimeElapsed > 1.0f)
 	{
@@ -70,5 +72,7 @@ unsigned long timer::getFrameRate(char* str) const
 	{
 		wsprintf(str, "FPS : %d", _frameRate);
 	}
+
+
 	return _frameRate;
 }
