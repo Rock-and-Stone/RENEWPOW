@@ -61,11 +61,16 @@
     <Filter Include="playGround\entity">
       <UniqueIdentifier>{7dd8f635-9d24-45fb-85d4-875859a2ffd6}</UniqueIdentifier>
     </Filter>
+<<<<<<< HEAD
     <Filter Include="playGround\object">
       <UniqueIdentifier>{a477618f-7412-48e2-954d-aed601ef5d6f}</UniqueIdentifier>
     </Filter>
     <Filter Include="playGround\entity\objManager">
       <UniqueIdentifier>{3a524959-a4e5-4275-9b35-c495e18d604d}</UniqueIdentifier>
+=======
+    <Filter Include="playGround\UserInterFace">
+      <UniqueIdentifier>{bab475e2-66c9-4fac-9e71-38d470a9250f}</UniqueIdentifier>
+>>>>>>> 344b9e01a9d16f5192ebff199d588d7fab022108
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -168,6 +173,7 @@
     <ClInclude Include="gameData.h">
       <Filter>playGround</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="objectScene.h">
       <Filter>playGround\Scene</Filter>
     </ClInclude>
@@ -176,6 +182,10 @@
     </ClInclude>
     <ClInclude Include="objectManager.h">
       <Filter>playGround\entity\objManager</Filter>
+=======
+    <ClInclude Include="Clock.h">
+      <Filter>playGround\UserInterFace</Filter>
+>>>>>>> 344b9e01a9d16f5192ebff199d588d7fab022108
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -266,6 +276,7 @@
     <ClCompile Include="gameData.cpp">
       <Filter>playGround</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="objectScene.cpp">
       <Filter>playGround\Scene</Filter>
     </ClCompile>
@@ -274,6 +285,10 @@
     </ClCompile>
     <ClCompile Include="objectManager.cpp">
       <Filter>playGround\entity\objManager</Filter>
+=======
+    <ClCompile Include="Clock.cpp">
+      <Filter>playGround\UserInterFace</Filter>
+>>>>>>> 344b9e01a9d16f5192ebff199d588d7fab022108
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
