@@ -64,35 +64,11 @@
     <Filter Include="playGround\object">
       <UniqueIdentifier>{c62616c6-98b2-4fdf-b415-e6ed44ebc3fa}</UniqueIdentifier>
     </Filter>
-    <Filter Include="playGround\userInterface">
-      <UniqueIdentifier>{57af10ed-1cdd-41d0-b3be-0be62a044f1b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="playGround\objectClass">
-      <UniqueIdentifier>{f11bfabd-da1b-47f6-8909-fa85f105d47f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="playGround\objectClass\Tools">
-      <UniqueIdentifier>{ecae1e9e-6296-43b5-a0b2-ba39610bf1ff}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="playGround\objectClass\Weapon">
-      <UniqueIdentifier>{bc77d703-9538-4fdf-8695-2f8343cb52a1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="playGround\objectClass\Fish">
-      <UniqueIdentifier>{b7a4db46-a15e-4ee2-b3e5-4977f5118dab}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="playGround\objectClass\Seed">
-      <UniqueIdentifier>{c1db4148-357b-4574-8968-611e263aa4e8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="playGround\objectClass\Crops">
-      <UniqueIdentifier>{6e786bcd-839e-4b61-8812-d8d1e93c260f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="playGround\objectClass\Ore">
-      <UniqueIdentifier>{16d676d9-3409-46d2-a421-644c726d1b56}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="playGround\object\objectManager">
+    <Filter Include="playGround\objectManager">
       <UniqueIdentifier>{cf41ccd9-2877-4d15-9825-4769a35641ef}</UniqueIdentifier>
     </Filter>
-    <Filter Include="playGround\Inventory">
-      <UniqueIdentifier>{5e889bf8-47a3-40d5-8a94-a70e7c62eb9d}</UniqueIdentifier>
+    <Filter Include="playGround\userInterface">
+      <UniqueIdentifier>{57af10ed-1cdd-41d0-b3be-0be62a044f1b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -199,7 +175,7 @@
       <Filter>playGround\object</Filter>
     </ClInclude>
     <ClInclude Include="objectManager.h">
-      <Filter>playGround\object\objectManager</Filter>
+      <Filter>playGround\objectManager</Filter>
     </ClInclude>
     <ClInclude Include="objectScene.h">
       <Filter>playGround\Scene</Filter>
@@ -210,76 +186,8 @@
     <ClInclude Include="Clock.h">
       <Filter>playGround\userInterface</Filter>
     </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="pickAxe.h">
-      <Filter>playGround\objectClass\Tools</Filter>
-    </ClInclude>
-    <ClInclude Include="axe.h">
-      <Filter>playGround\objectClass\Tools</Filter>
-    </ClInclude>
-    <ClInclude Include="can.h">
-      <Filter>playGround\objectClass\Tools</Filter>
-    </ClInclude>
-    <ClInclude Include="hoe.h">
-      <Filter>playGround\objectClass\Tools</Filter>
-    </ClInclude>
-    <ClInclude Include="rod.h">
-      <Filter>playGround\objectClass\Tools</Filter>
-    </ClInclude>
-    <ClInclude Include="sword.h">
-      <Filter>playGround\objectClass\Weapon</Filter>
-    </ClInclude>
-    <ClInclude Include="slingShot.h">
-      <Filter>playGround\objectClass\Weapon</Filter>
-    </ClInclude>
-    <ClInclude Include="haliBut.h">
-      <Filter>playGround\objectClass\Fish</Filter>
-    </ClInclude>
-    <ClInclude Include="pufferFish.h">
-      <Filter>playGround\objectClass\Fish</Filter>
-    </ClInclude>
-    <ClInclude Include="tuna.h">
-      <Filter>playGround\objectClass\Fish</Filter>
-    </ClInclude>
-    <ClInclude Include="potato.h">
-      <Filter>playGround\objectClass\Crops</Filter>
-    </ClInclude>
-    <ClInclude Include="parsnip.h">
-      <Filter>playGround\objectClass\Crops</Filter>
-    </ClInclude>
-    <ClInclude Include="kale.h">
-      <Filter>playGround\objectClass\Crops</Filter>
-    </ClInclude>
-    <ClInclude Include="copper.h">
-      <Filter>playGround\objectClass\Ore</Filter>
-    </ClInclude>
-    <ClInclude Include="gold.h">
-      <Filter>playGround\objectClass\Ore</Filter>
-    </ClInclude>
-    <ClInclude Include="iron.h">
-      <Filter>playGround\objectClass\Ore</Filter>
-    </ClInclude>
-    <ClInclude Include="cauliFlowerSeed.h">
-      <Filter>playGround\objectClass\Seed</Filter>
-    </ClInclude>
-    <ClInclude Include="kaleSeed.h">
-      <Filter>playGround\objectClass\Seed</Filter>
-    </ClInclude>
-    <ClInclude Include="parsnipSeed.h">
-      <Filter>playGround\objectClass\Seed</Filter>
-    </ClInclude>
-    <ClInclude Include="potatoSeed.h">
-      <Filter>playGround\objectClass\Seed</Filter>
-    </ClInclude>
-    <ClInclude Include="cauliFlower.h">
-      <Filter>playGround\objectClass\Crops</Filter>
-    </ClInclude>
-    <ClInclude Include="inventroy.h">
-      <Filter>playGround\Inventory</Filter>
-=======
     <ClInclude Include="mainMenuScene.h">
       <Filter>playGround\Scene</Filter>
->>>>>>> 55db4ab681e53ee4f21a5a69235770c64a7b968c
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -374,7 +282,7 @@
       <Filter>playGround\object</Filter>
     </ClCompile>
     <ClCompile Include="objectManager.cpp">
-      <Filter>playGround\object\objectManager</Filter>
+      <Filter>playGround\objectManager</Filter>
     </ClCompile>
     <ClCompile Include="openingScene.cpp">
       <Filter>playGround\Scene</Filter>
@@ -385,76 +293,8 @@
     <ClCompile Include="Clock.cpp">
       <Filter>playGround\userInterface</Filter>
     </ClCompile>
-<<<<<<< HEAD
-    <ClCompile Include="axe.cpp">
-      <Filter>playGround\objectClass\Tools</Filter>
-    </ClCompile>
-    <ClCompile Include="pickAxe.cpp">
-      <Filter>playGround\objectClass\Tools</Filter>
-    </ClCompile>
-    <ClCompile Include="can.cpp">
-      <Filter>playGround\objectClass\Tools</Filter>
-    </ClCompile>
-    <ClCompile Include="hoe.cpp">
-      <Filter>playGround\objectClass\Tools</Filter>
-    </ClCompile>
-    <ClCompile Include="rod.cpp">
-      <Filter>playGround\objectClass\Tools</Filter>
-    </ClCompile>
-    <ClCompile Include="sword.cpp">
-      <Filter>playGround\objectClass\Weapon</Filter>
-    </ClCompile>
-    <ClCompile Include="slingShot.cpp">
-      <Filter>playGround\objectClass\Weapon</Filter>
-    </ClCompile>
-    <ClCompile Include="tuna.cpp">
-      <Filter>playGround\objectClass\Fish</Filter>
-    </ClCompile>
-    <ClCompile Include="pufferFish.cpp">
-      <Filter>playGround\objectClass\Fish</Filter>
-    </ClCompile>
-    <ClCompile Include="haliBut.cpp">
-      <Filter>playGround\objectClass\Fish</Filter>
-    </ClCompile>
-    <ClCompile Include="potato.cpp">
-      <Filter>playGround\objectClass\Crops</Filter>
-    </ClCompile>
-    <ClCompile Include="parsnip.cpp">
-      <Filter>playGround\objectClass\Crops</Filter>
-    </ClCompile>
-    <ClCompile Include="kale.cpp">
-      <Filter>playGround\objectClass\Crops</Filter>
-    </ClCompile>
-    <ClCompile Include="copper.cpp">
-      <Filter>playGround\objectClass\Ore</Filter>
-    </ClCompile>
-    <ClCompile Include="gold.cpp">
-      <Filter>playGround\objectClass\Ore</Filter>
-    </ClCompile>
-    <ClCompile Include="iron.cpp">
-      <Filter>playGround\objectClass\Ore</Filter>
-    </ClCompile>
-    <ClCompile Include="cauliFlowerSeed.cpp">
-      <Filter>playGround\objectClass\Seed</Filter>
-    </ClCompile>
-    <ClCompile Include="kaleSeed.cpp">
-      <Filter>playGround\objectClass\Seed</Filter>
-    </ClCompile>
-    <ClCompile Include="parsnipSeed.cpp">
-      <Filter>playGround\objectClass\Seed</Filter>
-    </ClCompile>
-    <ClCompile Include="potatoSeed.cpp">
-      <Filter>playGround\objectClass\Seed</Filter>
-    </ClCompile>
-    <ClCompile Include="cauliFlower.cpp">
-      <Filter>playGround\objectClass\Crops</Filter>
-    </ClCompile>
-    <ClCompile Include="inventroy.cpp">
-      <Filter>playGround\Inventory</Filter>
-=======
     <ClCompile Include="mainMenuScene.cpp">
       <Filter>playGround\Scene</Filter>
->>>>>>> 55db4ab681e53ee4f21a5a69235770c64a7b968c
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
