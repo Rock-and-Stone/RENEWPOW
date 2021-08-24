@@ -18,5 +18,7 @@ public:
 
 	inline float getElapsedTime() const { return _timer->getElapsedTime(); }
 	inline float getWorldTime() const { return _timer->getWorldTime(); }
+	inline float GetWorldElapsedTime() { return _timer->GetWorldElapsedTime(); }
+	inline void SetWorldElapsedTime(float elapsedTime) { _timer->SetWorldElapsedTime(elapsedTime); }
 };
 

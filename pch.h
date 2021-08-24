@@ -49,6 +49,8 @@ using namespace TN_UTILS;
 #define KEYANIMANAGER keyAniManager::getSingleton()
 #define TXTDATA txtData::getSingleton()
 #define INIDATA iniDataManager::getSingleton()
+#define MAGENTA		(COLORREF)0x00FF00FF
+
 
 
 #define SAFE_DELETE(p) {if(p) {delete(p); (p) = nullptr;}}
