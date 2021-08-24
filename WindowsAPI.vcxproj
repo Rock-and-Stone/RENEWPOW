@@ -177,12 +177,19 @@
     <ClInclude Include="keyAniManager.h" />
     <ClInclude Include="keyManager.h" />
     <ClInclude Include="loadingScene.h" />
+<<<<<<< HEAD
+=======
+    <ClInclude Include="mainMenuScene.h" />
+>>>>>>> 55db4ab681e53ee4f21a5a69235770c64a7b968c
     <ClInclude Include="openingScene.h" />
     <ClInclude Include="object.h" />
     <ClInclude Include="objectManager.h" />
     <ClInclude Include="objectScene.h" />
+<<<<<<< HEAD
     <ClInclude Include="parsnip.h" />
     <ClInclude Include="parsnipSeed.h" />
+=======
+>>>>>>> 55db4ab681e53ee4f21a5a69235770c64a7b968c
     <ClInclude Include="pch.h" />
     <ClInclude Include="pickAxe.h" />
     <ClInclude Include="playerScene.h" />
@@ -238,6 +245,7 @@
     <ClCompile Include="keyAniManager.cpp" />
     <ClCompile Include="keyManager.cpp" />
     <ClCompile Include="loadingScene.cpp" />
+    <ClCompile Include="mainMenuScene.cpp" />
     <ClCompile Include="openingScene.cpp" />
     <ClCompile Include="object.cpp" />
     <ClCompile Include="objectManager.cpp" />

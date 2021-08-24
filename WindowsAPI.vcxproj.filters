@@ -210,6 +210,7 @@
     <ClInclude Include="Clock.h">
       <Filter>playGround\userInterface</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="pickAxe.h">
       <Filter>playGround\objectClass\Tools</Filter>
     </ClInclude>
@@ -275,6 +276,10 @@
     </ClInclude>
     <ClInclude Include="inventroy.h">
       <Filter>playGround\Inventory</Filter>
+=======
+    <ClInclude Include="mainMenuScene.h">
+      <Filter>playGround\Scene</Filter>
+>>>>>>> 55db4ab681e53ee4f21a5a69235770c64a7b968c
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -380,6 +385,7 @@
     <ClCompile Include="Clock.cpp">
       <Filter>playGround\userInterface</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="axe.cpp">
       <Filter>playGround\objectClass\Tools</Filter>
     </ClCompile>
@@ -445,6 +451,10 @@
     </ClCompile>
     <ClCompile Include="inventroy.cpp">
       <Filter>playGround\Inventory</Filter>
+=======
+    <ClCompile Include="mainMenuScene.cpp">
+      <Filter>playGround\Scene</Filter>
+>>>>>>> 55db4ab681e53ee4f21a5a69235770c64a7b968c
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

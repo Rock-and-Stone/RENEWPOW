@@ -18,8 +18,10 @@ HRESULT playGround::init()
 
 	SCENEMANAGER->addScene("loadingScene", new loadingScene);
 	SCENEMANAGER->addScene("playerScene", new playerScene);
-
-	SCENEMANAGER->changeScene("loadingScene");
+	SCENEMANAGER->addScene("openingScene", new openingScene);
+	SCENEMANAGER->addScene("loadingScene", new loadingScene);
+	SCENEMANAGER->addScene("mainMenuScene", new mainMenuScene);
+	SCENEMANAGER->changeScene("openingScene");
 
 	return S_OK;
 }
@@ -43,17 +45,21 @@ void playGround::update()
 //여기다 그려줘라!!!
 void playGround::render()
 {
-	PatBlt(getMemDC(), 0, 0, WINSIZEX, WINSIZEY, WHITENESS);
-	//==============위에는 제발 건드리지 마라 ============
+	if (!SCENEMANAGER->GetVideoPlay())
+	{
+		PatBlt(getMemDC(), 0, 0, WINSIZEX, WINSIZEY, WHITENESS);
+		//==============위에는 제발 건드리지 마라 ============
 
-	SCENEMANAGER->render();
+		SCENEMANAGER->render();
 
-	char str[25];
-	sprintf_s(str, "worldTime : %f", TIMEMANAGER->getWorldTime());
-	TextOut(getMemDC(), 0, 0, str, strlen(str));
+		char str[25];
+		sprintf_s(str, "worldTime : %f", TIMEMANAGER->getWorldTime());
+		TextOut(getMemDC(), 0, 0, str, strlen(str));
 
-	//=============== 밑에도 건들지마라 ================
-	_backBuffer->render(getHDC(), 0, 0);
+		//=============== 밑에도 건들지마라 ================
+		_backBuffer->render(getHDC(), 0, 0);
+	}
+	
 
 }
 
