@@ -61,6 +61,12 @@
     <Filter Include="playGround\entity">
       <UniqueIdentifier>{7dd8f635-9d24-45fb-85d4-875859a2ffd6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="playGround\entity\player">
+      <UniqueIdentifier>{768fec00-1ccd-4775-aeda-db9b5343375c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playGround\entity\npc">
+      <UniqueIdentifier>{7f7b5a00-2a61-49ce-a71b-90d18c547255}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -162,6 +168,12 @@
     <ClInclude Include="gameData.h">
       <Filter>playGround</Filter>
     </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>playGround\entity\player</Filter>
+    </ClInclude>
+    <ClInclude Include="playerState.h">
+      <Filter>playGround\entity\player</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WindowsAPI.cpp">
@@ -250,6 +262,12 @@
     </ClCompile>
     <ClCompile Include="gameData.cpp">
       <Filter>playGround</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>playGround\entity\player</Filter>
+    </ClCompile>
+    <ClCompile Include="playerState.cpp">
+      <Filter>playGround\entity\player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
