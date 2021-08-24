@@ -10,12 +10,12 @@
 
 
 
-class inventroy : public gameNode
-{	
+class inventory : public gameNode
+{
 private:
 
-	image*	_quickSlot;
-	image*	_invenImg;
+	image* _quickSlot;
+	image* _invenImg;
 
 	RECT	_quickSlotRc;
 	RECT	_inventoryRc;
@@ -31,10 +31,9 @@ public:
 	virtual void release();
 	virtual void update();
 	virtual void render();
-	
+
 	void ClickObject();
 	void DragObject();
 	void DragObjectToSwap();
-
-}; 
+};
 
