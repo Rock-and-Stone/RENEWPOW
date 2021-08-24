@@ -165,13 +165,11 @@
     <ClInclude Include="keyAniManager.h" />
     <ClInclude Include="keyManager.h" />
     <ClInclude Include="loadingScene.h" />
-
+    <ClInclude Include="mainMenuScene.h" />
     <ClInclude Include="openingScene.h" />
-
     <ClInclude Include="object.h" />
     <ClInclude Include="objectManager.h" />
     <ClInclude Include="objectScene.h" />
-
     <ClInclude Include="pch.h" />
     <ClInclude Include="playerScene.h" />
     <ClInclude Include="playGround.h" />
@@ -207,6 +205,7 @@
     <ClCompile Include="keyAniManager.cpp" />
     <ClCompile Include="keyManager.cpp" />
     <ClCompile Include="loadingScene.cpp" />
+    <ClCompile Include="mainMenuScene.cpp" />
     <ClCompile Include="openingScene.cpp" />
     <ClCompile Include="object.cpp" />
     <ClCompile Include="objectManager.cpp" />

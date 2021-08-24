@@ -4,8 +4,6 @@
 
 HRESULT openingScene::init()
 {
-	_titleBG = IMAGEMANAGER->addImage("mainScene", "source/images/mainScene.bmp", WINSIZEX, WINSIZEY, true, MAGENTA);
-
 	_opening = MCIWndCreate(_hWnd, NULL, WS_CHILD | WS_VISIBLE | MCIWNDF_NOPLAYBAR, "source/video/opening.mp4");
 	MoveWindow(_opening, 0, 0, WINSIZEX, WINSIZEY, NULL);
 	MCIWndPlay(_opening);
@@ -34,17 +32,13 @@ void openingScene::update()
 		{
 			MCIWndDestroy(_opening);
 			SCENEMANAGER->SetVideoPlay(false);
-
-		}
-
-		else
-		{
 			SCENEMANAGER->changeScene("loadingScene");
+
 		}
 	}
 }
 
 void openingScene::render()
 {
-	_titleBG->render(getMemDC());
+	
 }

@@ -10,6 +10,10 @@ class loadingScene : public gameNode
 private:
 	progressBar* _loadingBar;
 	image* _background;
+	image* _loadingImg;
+
+	int _frameX;
+	int _count;
 
 public:
 	loadingScene();

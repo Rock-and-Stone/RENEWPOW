@@ -2,6 +2,9 @@
 #include "gameNode.h"
 #include "loadingScene.h"
 #include "playerScene.h"
+#include "openingScene.h"
+#include "loadingScene.h"
+#include "mainMenuScene.h"
 
 
 class playGround : public gameNode
