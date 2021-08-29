@@ -152,7 +152,6 @@
     <ClInclude Include="aStarTest.h" />
     <ClInclude Include="button.h" />
     <ClInclude Include="CameraManager.h" />
-    <ClInclude Include="Clock.h" />
     <ClInclude Include="commonMacroFunction.h" />
     <ClInclude Include="effect.h" />
     <ClInclude Include="effectManager.h" />
@@ -165,13 +164,7 @@
     <ClInclude Include="keyAniManager.h" />
     <ClInclude Include="keyManager.h" />
     <ClInclude Include="loadingScene.h" />
-
-    <ClInclude Include="openingScene.h" />
-
-    <ClInclude Include="object.h" />
-    <ClInclude Include="objectManager.h" />
-    <ClInclude Include="objectScene.h" />
-
+    <ClInclude Include="npcManager.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="playerScene.h" />
@@ -197,7 +190,6 @@
     <ClCompile Include="aStarTest.cpp" />
     <ClCompile Include="button.cpp" />
     <ClCompile Include="CameraManager.cpp" />
-    <ClCompile Include="Clock.cpp" />
     <ClCompile Include="effect.cpp" />
     <ClCompile Include="effectManager.cpp" />
     <ClCompile Include="entity.cpp" />
@@ -209,10 +201,7 @@
     <ClCompile Include="keyAniManager.cpp" />
     <ClCompile Include="keyManager.cpp" />
     <ClCompile Include="loadingScene.cpp" />
-    <ClCompile Include="openingScene.cpp" />
-    <ClCompile Include="object.cpp" />
-    <ClCompile Include="objectManager.cpp" />
-    <ClCompile Include="objectScene.cpp" />
+    <ClCompile Include="npcManager.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
