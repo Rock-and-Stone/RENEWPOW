@@ -51,7 +51,7 @@ void loadingScene::update()
 	if (_currentCount == LOADINGMAX)
 	{
 		//이동할 씬 으로 변경
-		SCENEMANAGER->changeScene("mainMenuScene");
+		SCENEMANAGER->changeScene("inventory");
 	}
 
 	_count++;
@@ -80,7 +80,30 @@ DWORD CALLBACK threadFunction(LPVOID lpParameter)
 		//소스 파일 추가
 		
 		//IMAGEMANAGER->addFrameImage("playerTool", "playerTool.bmp", 96, 16, 6, 0, true, RGB(255, 0, 255)); // 플레이어 도구
+		   //소스 파일 추가
+		// 인벤토리 UI
+		IMAGEMANAGER->addImage("itemInventory", "source/Images/inventory/itemInventory.bmp", 750, 550, true, MAGENTA);
+		// 퀵슬롯 UI
+		IMAGEMANAGER->addImage("quickSlot", "source/Images/inventory/playerQuickslot.bmp", 565, 69, true, MAGENTA);
+		// 제작메뉴
+		IMAGEMANAGER->addImage("craftMenu", "source/Images/inventory/Craftinven.bmp", 750, 550, true, MAGENTA);
+		// 스탯메뉴
+		IMAGEMANAGER->addImage("statMenu", "source/Images/inventory/skill.bmp", 750, 550, true, MAGENTA);
+		// 설정메뉴
+		IMAGEMANAGER->addImage("settingMenu", "source/Images/inventory/setting.bmp", 750, 550, true, MAGENTA);
+		// 나가기메뉴
+		//IMAGEMANAGER->addImage("")
 
+		////도구 인벤토리
+		//IMAGEMANAGER->addFrameImage("playerTool", "source/Images/playerInventory/playerTool.bmp", 96, 16, 6, 0, true, RGB(255, 0, 255)); // 플레이어 도구
+		////씨앗 아이템
+		//IMAGEMANAGER->addFrameImage("seedItem", "source/Images/BMP/씨앗아이템(original).bmp", 360, 160, 9, 4, true, RGB(255, 0, 255));
+		////씨앗 아이템아이콘용
+		//IMAGEMANAGER->addFrameImage("seedItemSmall", "source/Images/BMP/small씨앗아이템(original).bmp", 144, 64, 9, 4, true, RGB(255, 0, 255));
+		////작물
+		//IMAGEMANAGER->addFrameImage("crops", "source/Images/BMP/열매(ori).bmp", 640, 120, 16, 3, true, RGB(255, 0, 255));
+		////작물 아이콘
+		//IMAGEMANAGER->addFrameImage("cropsSmall", "source/Images/BMP/열매small(ori).bmp", 256, 48, 16, 3, true, RGB(255, 0, 255));
 
 		//==================UI 부분 파일 추가 본=====================
 		//이미지
