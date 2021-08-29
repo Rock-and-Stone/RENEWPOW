@@ -179,6 +179,7 @@
     <ClInclude Include="loadingScene.h" />
     <ClInclude Include="mainMenuScene.h" />
     <ClInclude Include="Map.h" />
+    <ClInclude Include="MouseSetting.h" />
     <ClInclude Include="openingScene.h" />
     <ClInclude Include="object.h" />
     <ClInclude Include="objectManager.h" />
@@ -208,6 +209,7 @@
     <ClInclude Include="timer.h" />
     <ClInclude Include="tuna.h" />
     <ClInclude Include="txtData.h" />
+    <ClInclude Include="UserInterface.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>
   <ItemGroup>
@@ -242,6 +244,7 @@
     <ClCompile Include="loadingScene.cpp" />
     <ClCompile Include="mainMenuScene.cpp" />
     <ClCompile Include="Map.cpp" />
+    <ClCompile Include="MouseSetting.cpp" />
     <ClCompile Include="openingScene.cpp" />
     <ClCompile Include="object.cpp" />
     <ClCompile Include="objectManager.cpp" />
@@ -272,6 +275,7 @@
     <ClCompile Include="timer.cpp" />
     <ClCompile Include="tuna.cpp" />
     <ClCompile Include="txtData.cpp" />
+    <ClCompile Include="UserInterface.cpp" />
     <ClCompile Include="utils.cpp" />
     <ClCompile Include="WindowsAPI.cpp" />
   </ItemGroup>

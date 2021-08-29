@@ -93,11 +93,8 @@ public:
 	~object();
 
 	virtual HRESULT init();
-<<<<<<< HEAD
 	virtual HRESULT init(const char* imageName , POINT position, ALLITEMS items, ITEMTYPE itemTypes , int frameX, int frameY);
-=======
 	//virtual HRESULT init(const char* imageName , POINT postition);
->>>>>>> 55db4ab681e53ee4f21a5a69235770c64a7b968c
 	virtual void release();
 	virtual void update();
 	virtual void render();

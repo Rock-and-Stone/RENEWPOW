@@ -14,6 +14,8 @@ HRESULT mainMenuScene::init()
 		_select.x[i] = _select.rc[i].left;
 		_select.y[i] = _select.rc[i].top;
 	}
+	_ui = new UserInterface;
+	_ui->init();
 	return S_OK;
 }
 
@@ -61,7 +63,7 @@ void mainMenuScene::update()
 
 		
 	}
-
+	_ui->update();
 }
 
 void mainMenuScene::render()
@@ -86,4 +88,5 @@ void mainMenuScene::render()
 		}
 		
 	}
+	_ui->render();
 }

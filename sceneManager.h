@@ -32,6 +32,9 @@ public:
 
 	HRESULT changeScene(string sceneName);
 
+	//ÇöÀç¾ÀÀÌ ¹ºÁö?
+	BOOL isCurrentScene(string sceneName);
+
 	bool GetVideoPlay() { return _isVideoPlay; }
 	void SetVideoPlay(bool isPlay) { _isVideoPlay = isPlay; }
 };

@@ -38,6 +38,8 @@ using namespace TN_UTILS;
 #define WINSIZEX	1280								//윈도우 가로크기
 #define WINSIZEY	720								//윈도우 세로크기
 #define WINSTYLE	WS_CAPTION | WS_SYSMENU
+#define WINSIZEX2	1600
+#define WINSIZEY2	900
 
 #define RND randomFunction::getSingleton()
 #define KEYMANAGER keyManager::getSingleton()

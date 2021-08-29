@@ -1,5 +1,6 @@
 #pragma once
 #include "gameNode.h"
+#include "UserInterface.h"
 
 struct tagSelect
 {
@@ -14,7 +15,7 @@ class mainMenuScene :
 {
 private:
     tagSelect _select;
-
+    UserInterface* _ui;
   
 
 public:

@@ -282,6 +282,12 @@
     <ClInclude Include="inventory.h">
       <Filter>playGround\inventory</Filter>
     </ClInclude>
+    <ClInclude Include="MouseSetting.h">
+      <Filter>playGround\userInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface.h">
+      <Filter>playGround\userInterface</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WindowsAPI.cpp">
@@ -457,6 +463,12 @@
     </ClCompile>
     <ClCompile Include="inventory.cpp">
       <Filter>playGround\inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseSetting.cpp">
+      <Filter>playGround\userInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="UserInterface.cpp">
+      <Filter>playGround\userInterface</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
