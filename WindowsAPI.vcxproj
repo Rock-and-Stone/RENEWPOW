@@ -153,10 +153,13 @@
     <ClInclude Include="axe.h" />
     <ClInclude Include="button.h" />
     <ClInclude Include="CameraManager.h" />
+<<<<<<< HEAD
+=======
     <ClInclude Include="can.h" />
     <ClInclude Include="cauliFlower.h" />
     <ClInclude Include="cauliFlowerSeed.h" />
     <ClInclude Include="Clock.h" />
+>>>>>>> 53bf743197c2793c910e2e0ae603992dd0fa8733
     <ClInclude Include="commonMacroFunction.h" />
     <ClInclude Include="copper.h" />
     <ClInclude Include="effect.h" />
@@ -177,6 +180,11 @@
     <ClInclude Include="keyAniManager.h" />
     <ClInclude Include="keyManager.h" />
     <ClInclude Include="loadingScene.h" />
+<<<<<<< HEAD
+    <ClInclude Include="npcManager.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="player.h" />
+=======
     <ClInclude Include="mainMenuScene.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="MouseSetting.h" />
@@ -188,7 +196,9 @@
     <ClInclude Include="parsnipSeed.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="pickAxe.h" />
+>>>>>>> 53bf743197c2793c910e2e0ae603992dd0fa8733
     <ClInclude Include="playerScene.h" />
+    <ClInclude Include="playerState.h" />
     <ClInclude Include="playGround.h" />
     <ClInclude Include="potato.h" />
     <ClInclude Include="potatoSeed.h" />
@@ -219,11 +229,14 @@
     <ClCompile Include="axe.cpp" />
     <ClCompile Include="button.cpp" />
     <ClCompile Include="CameraManager.cpp" />
+<<<<<<< HEAD
+=======
     <ClCompile Include="can.cpp" />
     <ClCompile Include="cauliFlower.cpp" />
     <ClCompile Include="cauliFlowerSeed.cpp" />
     <ClCompile Include="Clock.cpp" />
     <ClCompile Include="copper.cpp" />
+>>>>>>> 53bf743197c2793c910e2e0ae603992dd0fa8733
     <ClCompile Include="effect.cpp" />
     <ClCompile Include="effectManager.cpp" />
     <ClCompile Include="entity.cpp" />
@@ -242,6 +255,9 @@
     <ClCompile Include="keyAniManager.cpp" />
     <ClCompile Include="keyManager.cpp" />
     <ClCompile Include="loadingScene.cpp" />
+<<<<<<< HEAD
+    <ClCompile Include="npcManager.cpp" />
+=======
     <ClCompile Include="mainMenuScene.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="MouseSetting.cpp" />
@@ -251,14 +267,20 @@
     <ClCompile Include="objectScene.cpp" />
     <ClCompile Include="parsnip.cpp" />
     <ClCompile Include="parsnipSeed.cpp" />
+>>>>>>> 53bf743197c2793c910e2e0ae603992dd0fa8733
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+<<<<<<< HEAD
+    <ClCompile Include="player.cpp" />
+=======
     <ClCompile Include="pickAxe.cpp" />
+>>>>>>> 53bf743197c2793c910e2e0ae603992dd0fa8733
     <ClCompile Include="playerScene.cpp" />
+    <ClCompile Include="playerState.cpp" />
     <ClCompile Include="playGround.cpp" />
     <ClCompile Include="potato.cpp" />
     <ClCompile Include="potatoSeed.cpp" />

@@ -9,22 +9,26 @@
 #define TILESIZEY TILESIZE * TILEY
 
 //타일 셋 가로 20줄 세로 9줄
-#define SAMPLETILEX 20
-#define SAMPLETILEY 9
+#define SAMPLETILEX 15
+#define SAMPLETILEY 4
+
+#define SAMPLEOBJECTX 13
+#define SAMPLEOBJECTY 18
+
 
 //이넘문으로 해도 되지만 옛날에는 메모리 아낀다고 많이 썼던
 //비트필드로 한 번 해보겠슴다 (요즘은 걍 이넘문 써도 무방함)
 
 #define ATTR_UNMOVE 0x00000001	//못가는 타일
-#define ATTR_SWAMP	0x00000002	//늪지대
-#define ATTR_POISON	0x00000004	//독지대
-#define ATTR_FROZEN	0x00000008	//빙판지대
+#define ATTR_HOE	0x00000002	//경작지대
+#define ATTR_ROAD	0x00000004	//도로지대
+#define ATTR_ENTRANCE	0x00000008	//입출구
 
 
 //지형
 enum TERRAIN
 {
-	TR_CEMENT, TR_DESERT, TR_GRASS, TR_WATER, TR_END
+	TR_GRASS_0, TR_GRASS_1, TR_GRASS_2, TR_DIRT, TR_DIRT_WET, TR_WATER, TR_END
 };
 
 //오브젝트
@@ -51,6 +55,7 @@ struct tagTile
 	int terrainFrameY;
 	int objFrameX;
 	int objFrameY;
+	int posX, posY;
 };
 
 //타일 셋

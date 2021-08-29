@@ -4,8 +4,8 @@
 class tile : public gameNode
 {
 private:
-	int _idX;
-	int _idY;
+	int _idX;		//X 인덱스
+	int _idY;		//Y 인덱스
 
 	POINT _center;	//타일의 중점
 	RECT _rc;
