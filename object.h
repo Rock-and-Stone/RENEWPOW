@@ -94,7 +94,6 @@ public:
 
 	virtual HRESULT init();
 	virtual HRESULT init(const char* imageName , POINT position, ALLITEMS items, ITEMTYPE itemTypes , int frameX, int frameY);
-	//virtual HRESULT init(const char* imageName , POINT postition);
 	virtual void release();
 	virtual void update();
 	virtual void render();
