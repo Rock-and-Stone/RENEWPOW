@@ -11,6 +11,8 @@
 class playGround : public gameNode
 {
 private:
+	POINT  _winSize;
+	bool _isChange;
 	
 	   	
 
@@ -23,7 +25,12 @@ public:
 	virtual void update();			//연산하는 함수
 	virtual void render();			//그리기 함수
 
-	
+	void SetWindowSize(POINT size);
+	void ChangeWindowSize();
+
+	inline BOOL GetChange() { return _isChange; }
+	inline void SetChange(bool change) { _isChange = change; }
+	inline POINT GetWindowSize() { return _winSize; }
 	
 };
 

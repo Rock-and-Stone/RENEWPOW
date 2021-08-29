@@ -19,13 +19,14 @@ HRESULT tile::init(int idX, int idY)
 	_brush = CreateSolidBrush(_color);
 	_pen = CreatePen(PS_SOLID, 1, RGB(0, 0, 0));
 
-	_center = PointMake(idX * TILEWIDTH + (TILEWIDTH / 2),
+	_center = PointMake(idX * TILEWIDTH + (TILEWIDTH / 2), //중앙 좌표 초기화
 		idY * TILEHEIGHT + (TILEHEIGHT / 2));
 
 	_idX = idX;
 	_idY = idY;
 
-	_rc = RectMakeCenter(_center.x, _center.y, TILEWIDTH, TILEHEIGHT);
+	_rc = RectMakeCenter(_center.x, _center.y, TILEWIDTH, TILEHEIGHT); //렉트 초기화
+
 
 	return S_OK;
 }

@@ -4,6 +4,8 @@
 
 playGround::playGround()
 {
+	_winSize = { WINSIZEX, WINSIZEY };
+	_isChange = false;
 }
 
 
@@ -21,6 +23,7 @@ HRESULT playGround::init()
 	SCENEMANAGER->addScene("openingScene", new openingScene);
 	SCENEMANAGER->addScene("loadingScene", new loadingScene);
 	SCENEMANAGER->addScene("mainMenuScene", new mainMenuScene);
+
 	SCENEMANAGER->changeScene("openingScene");
 
 	return S_OK;
@@ -39,6 +42,7 @@ void playGround::update()
 {
 	gameNode::update();
 
+	ChangeWindowSize();
 	SCENEMANAGER->update();
 }
 
@@ -61,5 +65,25 @@ void playGround::render()
 	}
 	
 
+}
+
+void playGround::SetWindowSize(POINT size)
+{
+	if (_winSize.x == size.x && _winSize.y == size.y)
+		return;
+	_isChange = true;
+	_winSize = size;
+}
+
+void playGround::ChangeWindowSize()
+{
+	if (SCENEMANAGER->isCurrentScene("loadingScene"))
+	{
+		SetWindowSize({WINSIZEX2, WINSIZEY2});
+	}
+	else
+	{
+		SetWindowSize({ WINSIZEX, WINSIZEY });
+	}
 }
 

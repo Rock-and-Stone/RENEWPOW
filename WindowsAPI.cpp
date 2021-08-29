@@ -74,6 +74,12 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	
 	while (true)
 	{
+		if (_pg.GetChange())
+		{
+			setWindowsSize(WINSTARTX, WINSTARTY, _pg.GetWindowSize().x, _pg.GetWindowSize().y);
+			ShowWindow(_hWnd, cmdShow);
+			_pg.SetChange(false);
+		}
 		if (PeekMessage(&message, NULL, 0, 0, PM_REMOVE))
 		{
 			if (message.message == WM_QUIT) break;
