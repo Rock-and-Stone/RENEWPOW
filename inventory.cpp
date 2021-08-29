@@ -151,7 +151,7 @@ void inventory::InvetoryOpen()
     {
         for (int i = 0; i < 12; ++i)
         {
-            _items.rc = RectMake(_menuRc.left + 42 + (i * 4) , _menuRc.top + 93 + (j * 10), 50, 45);
+            _items[i].rc = RectMake(_menuRc.left + 42 + (i * 4) , _menuRc.top + 93 + (j * 10), 50, 45);
         }
     }
 }
