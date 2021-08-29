@@ -1,10 +1,12 @@
 #pragma once
 #include "tileNode.h"
 #include "gameNode.h"
+#include "button.h"
 
 //타일 셋 가로 20줄 세로 9줄
-#define SAMPLETILEX 20
-#define SAMPLETILEY 9
+#define SAMPLEOBJECTX 13
+#define SAMPLEOBJECTY 18
+
 
 enum CTRL
 {
@@ -22,6 +24,7 @@ struct tagCurrentTile
 	int y;
 };
 
+
 class Map : public gameNode
 {
 private:
@@ -31,9 +34,21 @@ private:
 	tagCurrentTile _currentTile;
 	tagSampleTile _sampleTile[SAMPLETILEX * SAMPLETILEY];
 
+	button* _buttonSave;
+	button* _buttonLoad;
+	button* _buttonDraw;
+	button* _buttonObject;
+	button* _buttonErase;
+
+	button* _buttonLeft;
+	button* _buttonRight;
 
 	int _pos[2];
 	int _ctrSelect;
+	bool _isPicked;
+
+	float _posX, _posY;
+	float _rendX, _rendY;
 
 public:
 	Map();
@@ -47,8 +62,14 @@ public:
 	void save();
 	void load();
 
-	void SetSample();
-	void SetMap();
+	void Movement();
+
+	void SetSample(int select, string str);
+	void PickSample();
+	void DrawMap();
+	void AutoDraw(tagTile* currentTile);
+
+	static void Button(void* obj);
 
 	tagTile* getTile() { return _tiles; }
 
@@ -64,6 +85,6 @@ public:
 	int getPosFirst() { return _pos[0]; }
 	int getPosSecond() { return _pos[1]; }
 
-
+	
 };
 

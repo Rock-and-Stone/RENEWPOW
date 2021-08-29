@@ -3,6 +3,9 @@
 
 //함수포인터 형태를 가진 콜백함수
 typedef void(*CALLBACK_FUNCTION)(void);
+typedef void(*CALLBACK_FUNCTION_PARAMETER)(void*);
+
+
 
 //공부꺼리~ 물론 안하셔도 됩니다 자유
 //<Functional> 이런 라이브러리가 있는데
@@ -32,11 +35,14 @@ private:
 	RECT _rc;
 	float _x, _y;
 
+	void* _obj;
+
 	POINT _btnDownFramePoint;
 	POINT _btnUpFramePoint;
 
 	//콜백함수 선언
 	CALLBACK_FUNCTION _callbackFunction;
+	CALLBACK_FUNCTION_PARAMETER _callbackFunctionParameter;
 
 public:
 	button();
@@ -46,8 +52,24 @@ public:
 		POINT btnDownFramePoint, POINT btnUpFramePoint,
 		CALLBACK_FUNCTION cbFunction);
 
+	HRESULT init(const char* imageName, int x, int y,
+		POINT btnDownFramePoint, POINT btnUpFramePoint,
+		CALLBACK_FUNCTION_PARAMETER cbFunction, void* obj);
+
+
+	HRESULT init(const char* imageName, int x, int y,
+		POINT btnDownFramePoint, POINT btnUpFramePoint);
+
+
 	void release();
 	void update();
+	void Update();
 	void render();
+
+	BUTTONDIRECTION getBtnDir() { return _direction; }
+	void setBtnDir(BUTTONDIRECTION dir) { _direction = dir; }
+
+	int	getButtonX() { return _x; }
+	void setButtonX(int x) { _x = x; }
 };
 

@@ -16,11 +16,16 @@ loadingScene::~loadingScene()
 
 HRESULT loadingScene::init()
 {
-	_background = IMAGEMANAGER->addImage("배경", "source/Images/background.bmp", WINSIZEX, WINSIZEY, true, RGB(255, 0, 255));
+	_background = IMAGEMANAGER->addImage("배경", "source/Images/loadingScene/blackWindow.bmp", WINSIZEX, WINSIZEY, true, MAGENTA);
 
-	_loadingBar = new progressBar;
+	/*_loadingBar = new progressBar;
 	_loadingBar->init(0, WINSIZEY - 50, WINSIZEX, 50);
-	_loadingBar->setGauge(0, 0);
+	_loadingBar->setGauge(0, 0);*/
+
+	IMAGEMANAGER->addFrameImage("loading", "source/Images/loadingScene/loading.bmp", 822, 62, 3, 1, true, MAGENTA);
+	_loadingImg = IMAGEMANAGER->findImage("loading");
+	_frameX = 0;
+	_count = 0;
 
 	CreateThread(
 		NULL,				//스레드 보안속성(자식윈도우 존재할때)
@@ -40,20 +45,33 @@ void loadingScene::release()
 
 void loadingScene::update()
 {
-  _loadingBar->update();
-  _loadingBar->setGauge(_currentCount, LOADINGMAX);
+ /* _loadingBar->update();
+  _loadingBar->setGauge(_currentCount, LOADINGMAX);*/
 
 	if (_currentCount == LOADINGMAX)
 	{
 		//이동할 씬 으로 변경
+<<<<<<< HEAD
 		SCENEMANAGER->changeScene("playerScene");
+=======
+		SCENEMANAGER->changeScene("mainMenuScene");
 	}
+
+	_count++;
+
+	if (_count % 30 == 0)
+	{
+		_frameX++;
+>>>>>>> 53bf743197c2793c910e2e0ae603992dd0fa8733
+	}
+	if (_frameX >= 3) _frameX = 0;
 }
 
 void loadingScene::render()
 {
 	_background->render(getMemDC());
-	_loadingBar->render();
+	//_loadingBar->render();
+	_loadingImg->frameRender(getMemDC(), 50, WINSIZEY - 100, _frameX, 0);
 }
 
 DWORD CALLBACK threadFunction(LPVOID lpParameter)
@@ -63,15 +81,27 @@ DWORD CALLBACK threadFunction(LPVOID lpParameter)
 
 	while (loadingHelper->_currentCount != LOADINGMAX)
 	{
+<<<<<<< HEAD
 		//소스 파일 추가	
 		//IMAGEMANAGER->addFrameImage("playerTool", "playerTool.bmp", 96, 16, 6, 0, true, RGB(255, 0, 255)); // 플레이어 도구
 		IMAGEMANAGER->addFrameImage("player","source/Images/플레이어이미지3.bmp",576,2176,12,34,true,MAGENTA);
 
+=======
+		//소스 파일 추가
+		
+		//IMAGEMANAGER->addFrameImage("playerTool", "playerTool.bmp", 96, 16, 6, 0, true, RGB(255, 0, 255)); // 플레이어 도구
+>>>>>>> 53bf743197c2793c910e2e0ae603992dd0fa8733
 
 
 		//==================UI 부분 파일 추가 본=====================
 		//이미지
-		
+		IMAGEMANAGER->addImage("title", "source/images/mainScene/title.bmp", 690, 318, true, MAGENTA);
+		IMAGEMANAGER->addImage("mainScene", "source/images/mainScene/mainScene.bmp", WINSIZEX, WINSIZEY, true, MAGENTA);
+		IMAGEMANAGER->addFrameImage("start", "source/images/mainScene/start.bmp", 185, 292, 1, 2, true, MAGENTA);
+		IMAGEMANAGER->addFrameImage("load", "source/images/mainScene/load.bmp", 185, 292, 1, 2, true, MAGENTA);
+		IMAGEMANAGER->addFrameImage("mapTool", "source/images/mainScene/mapTool.bmp", 185, 292, 1, 2, true, MAGENTA);
+		IMAGEMANAGER->addFrameImage("exit", "source/images/mainScene/exit.bmp", 185, 292, 1, 2, true, MAGENTA);
+		IMAGEMANAGER->addFrameImage("back", "source/images/mainScene/back.bmp", 198, 162, 1, 2, true, MAGENTA);
 		
 
 		//사운드

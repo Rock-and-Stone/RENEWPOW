@@ -86,3 +86,16 @@ HRESULT sceneManager::changeScene(string sceneName)
 
 	return E_FAIL;
 }
+
+BOOL sceneManager::isCurrentScene(string sceneName)
+{
+	mapSceneIter find = _mSceneList.find(sceneName);
+
+	//해당 씬을 찾지 못했다면         
+	if (find == _mSceneList.end())    return false;
+
+	//찾으려는 씬이 현재 씬이면
+	if (find->second == _currentScene) return true;
+
+	return false;
+}
